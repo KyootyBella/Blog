@@ -9,7 +9,7 @@
 
   --contactform: #c4c4c480;
   --contactform-text: #fafafa;
-  --button-color: #fed3cb;
+  --button-color: #ffe2dc;
   --text: #252525;
 
   --nav-bar-h1: #393939;
@@ -44,7 +44,7 @@
 
   --contactform: #74747480;
   --contactform-text: #74747490;
-  --button-color: #c39a92;
+  --button-color: #ecbbb1;
   --text: #dddddd;
 
   --drop-shadow: #fdb7c180;
@@ -89,9 +89,11 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .container {
   background-color: var(--main-bg);
+  display: table;
 }
 a {
   transition: all 0.5s ease;
@@ -301,7 +303,7 @@ h6 {
   background-color: var(--nav-bar);
   position: fixed;
   top: -125px;
-  width: 100%;
+  width: 100vw;
   transition: top 1.2s;
   justify-content: space-between;
   overflow: hidden;
@@ -334,20 +336,16 @@ h6 {
   display: block;
 }
 #navbar h1 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
   color: var(--nav-bar-h1);
-  float: left;
   padding: 8px;
   filter: drop-shadow(0px 3px 2px var(--drop-shadow));
 }
 #navbar .icon {
   display: none;
   font-size: 15px;
-}
-#logo {
-  margin-left: 2%;
 }
 
 /* Abous Us */
@@ -558,7 +556,6 @@ label {
 
 input[type="submit"] {
   background-color: var(--button-color);
-  color: var(--white);
   padding: 10px 40px;
   border: none;
   font-size: 20px;
@@ -574,7 +571,7 @@ input[type="submit"]:hover {
   transition: all 0.5s ease;
 }
 
-/* .col-25 {
+.col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
@@ -593,7 +590,8 @@ input[type="submit"]:hover {
     width: 100%;
     margin-top: 0;
   }
-} */
+}
+
 /* Break */
 .break {
   background-image: url(../photos/break.jpg);
@@ -625,8 +623,8 @@ input[type="submit"]:hover {
   width: 450px;
   height: 850px;
   margin-top: 1.5em;
-  margin-right: 6%;
-  padding: 2em;
+  margin-right: 2vw;
+  padding: 2rem;
   text-align: center;
   position: relative;
 }
@@ -647,7 +645,7 @@ input[type="submit"]:hover {
 }
 .ourProductscontent h4 {
   color: var(--h4);
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 300;
   margin-bottom: 4rem;
   margin-top: 8rem;
@@ -692,9 +690,8 @@ input[type="submit"]:hover {
   background-color: var(--main-bg);
   height: 100vh;
 }
-
-.Reviews h1 {
-  font-size: 130px;
+.reviews h1 {
+  font-size: 8vw;
   text-align: center;
 }
 
@@ -826,31 +823,41 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 880px) {
-  .footer {
-    font: bold 14px sans-serif;
+
+@media screen and (max-width: 1550px) {
+  .post5,
+  .post6 {
+    display: none;
   }
 
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer .footer-center i {
-    margin-left: 0;
+  .show {
+    width: 60vw;
+    margin-top: 2em;
+    margin-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
+  .post3,
+  .post4 {
+    display: none;
+  }
+  .show {
+    width: 50vw;
+    margin-top: 2em;
+    margin-left: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   #navbar h1 {
     font-size: 30px;
-  }
-  #logo {
-    margin-left: 2px;
+    text-align: center;
+    margin: auto;
   }
   #navbar ul {
     gap: 22px;
@@ -871,12 +878,56 @@ footer {
   .contactform {
     width: 85%;
   }
+  input[type="submit"] {
+    margin-top: 2rem;
+    float: left;
+  }
   .dot {
     width: 12px;
     height: 12px;
   }
   .topbar a {
     font-size: 20px;
+  }
+
+  .ourProducts {
+    width: 80vw;
+    height: 1000px;
+  }
+
+  .ourProducts p {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 10rem;
+  }
+
+  .footer {
+    font: bold 14px sans-serif;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+  .products {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  .ourProducts {
+    max-width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .show {
+    display: none;
   }
 }
 
@@ -888,19 +939,11 @@ footer {
     float: right;
     display: block;
   }
-  #navbar h1 {
-    font-size: 20px;
-  }
-  #logo {
-    margin-left: 2px;
-  }
   #navbar a.icon {
     font-size: 13px;
   }
-}
 
-@media screen and (max-width: 665px) {
-  #navbar.responsive {
+  /* #navbar.responsive {
     display: flex;
     position: fixed;
   }
@@ -911,11 +954,11 @@ footer {
     float: right;
     display: block;
     text-align: center;
-  }
+  } */
 }
 
 @media screen and (max-width: 550px) {
-  #navbar.responsive ul {
+  /* #navbar.responsive ul {
     gap: 10px;
     margin: 0 5px 0 0;
   }
@@ -925,8 +968,8 @@ footer {
   #navbar.responsive h1 {
     font-size: 18px;
     padding: 4px 2px;
-    width: 120px;
-  }
+    width: 2vw;
+  } */
   .topbar {
     top: 4%;
   }
@@ -948,7 +991,7 @@ footer {
   #navbar ul {
     gap: 5px !important;
   }
-  #navbar.responsive a {
+  /* #navbar.responsive a {
     font-size: 14px !important;
   }
   #navbar.responsive h1 {
@@ -957,12 +1000,5 @@ footer {
   }
   #navbar.responsive {
     width: 100%;
-  }
-  #logo {
-    margin-left: 0% !important;
-  }
-}
-h1 {
-  font-size: 150px;
-  text-align: center;
+  } */
 }
