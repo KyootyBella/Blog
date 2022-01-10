@@ -17,6 +17,14 @@
   </head>
   <body>
     <div class="container">
+      <a class="fixedbtn">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <p>Dark mode</p>
+      </a>
+
       <nav>
         <div id="navbar" class="navbar" style="height: 63px">
           <a href="#home" id="logo" class="anchor"><h1>KyootyBella</h1></a>
@@ -34,14 +42,7 @@
             <li class="School">
               <a href="#School" class="School anchor">Education</a>
             </li>
-            <!-- <li>
-              <a
-                id="login"
-                class="anchor"
-                onclick="document.getElementById('loginpopup').style.display='block'"
-                >Login</a
-              >
-            </li> -->
+
             <li class="icon">
               <a
                 href="javascript:void(0);"
@@ -55,56 +56,7 @@
           </ul>
         </div>
       </nav>
-      <!-- <div id="loginpopup" class="modal">
-        <form
-          class="modal-content animate"
-          action="php/authenticate.php"
-          method="post"
-        >
-          <div class="imgcontainer">
-            <span
-              onclick="document.getElementById('loginpopup').style.display='none'"
-              class="close"
-              title="Close Modal"
-              >&times;</span
-            >
-          </div>
 
-          <div class="formcontainer">
-            <label for="username"><b>Username</b></label>
-            <input
-              type="text"
-              placeholder="Enter Username"
-              name="username"
-              required
-            />
-
-            <label for="password"><b>Password</b></label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="password"
-              required
-            />
-
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember" />
-              Remember me
-            </label>
-          </div>
-
-          <div class="formcontainer" style="background-color: #f1f1f1">
-            <button
-              type="button"
-              onclick="document.getElementById('loginpopup').style.display='none'"
-              class="cancelbtn"
-            >
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div> -->
       <section id="home">
         <div class="header">
           <div class="bg-image"></div>
@@ -114,14 +66,6 @@
               <li><a href="#Products" class="anchor">Projects</a></li>
               <li><a href="#Reviews" class="anchor">Experience</a></li>
               <li><a href="#School" class="anchor">Education</a></li>
-              <!-- <li>
-                <a
-                  class="anchor"
-                  id="login"
-                  onclick="document.getElementById('loginpopup').style.display='block'"
-                  >Login</a
-                >
-              </li> -->
             </ul>
           </div>
           <div class="context">
@@ -304,7 +248,7 @@
         </p>
 
         <p class="footer-name">
-          Copyright © 2020 All rights are served to KyootyBella
+          Copyright © 2022 All rights are served to KyootyBella
         </p>
         <p class="footer-name footer-spacer">
           There are no cookies on the site as I ain't tracking anything.
@@ -337,4 +281,5 @@
   </script>
   <script src="scripts/scroll.js"></script>
   <script src="scripts/active.js"></script>
+  <script src="scripts/themes.js"></script>
 </html>

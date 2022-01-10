@@ -10,12 +10,12 @@
   --contactform: #c4c4c480;
   --contactform-text: #fafafa;
   --button-color: #fed3cb;
-  --text: #000000;
+  --text: #252525;
 
   --nav-bar-h1: #393939;
   --h1: #393939;
   --h4: #efc5bd;
-  --h6: #525252;
+  --h6: #b4b4b4;
 
   --drop-shadow: #fdb7c180;
   --drop-shadow-h6: #531212b3;
@@ -35,48 +35,51 @@
   --footer-about: #92999f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-bg: #1b1b1b;
-    --main-color: #f3a39b;
-    --body: #00000000;
-    --main-hover: #d399a2;
-    --nav-bar: #363636;
+[data-theme="dark"] {
+  --main-bg: #1b1b1b;
+  --main-color: #f3a39b;
+  --body: #00000000;
+  --main-hover: #d399a2;
+  --nav-bar: #363636;
 
-    --contactform: #74747480;
-    --contactform-text: #74747490;
-    --button-color: #c39a92;
-    --text: #dddddd;
+  --contactform: #74747480;
+  --contactform-text: #74747490;
+  --button-color: #c39a92;
+  --text: #dddddd;
 
-    --drop-shadow: #fdb7c180;
-    --drop-shadow-h6: #531212b3;
+  --drop-shadow: #fdb7c180;
+  --drop-shadow-h6: #531212b3;
 
-    --nav-bar-h1: #d4d4d4;
-    --h1: #d4d4d4;
-    --h4: #efc5bd;
-    --h6: #fafafa;
+  --nav-bar-h1: #d4d4d4;
+  --h1: #d4d4d4;
+  --h4: #efc5bd;
+  --h6: #fafafa;
 
-    --white: #b1b1b1;
-    --gray: #c4c4c480;
+  --white: #b1b1b1;
+  --gray: #c4c4c480;
 
-    --box: #74747480;
-    --dot: #bbb;
-    --dot-active: #717171;
+  --box: #74747480;
+  --dot: #bbb;
+  --dot-active: #717171;
 
-    --footer: #292c2f;
-    --footer-white: #dddddd;
-    --footer-icons: #b194a8;
-    --footer-name: #8f9296;
-    --footer-link: #5383d3;
-    --footer-about: #92999f;
-  }
+  --theme-btn: #74747480;
+  --theme-btn-bg: #fafafa;
 
-  .bg-image,
-  .break {
-    filter: brightness(0.65) contrast(1.5);
-  }
+  --footer: #292c2f;
+  --footer-white: #dddddd;
+  --footer-icons: #b194a8;
+  --footer-name: #8f9296;
+  --footer-link: #5383d3;
+  --footer-about: #92999f;
 }
 
+/* Image filter */
+.bg-image,
+.break {
+  filter: brightness(0.65) contrast(1.5);
+}
+
+/* base setup */
 * {
   padding: 0;
   margin: 0;
@@ -103,6 +106,65 @@ section {
   color: var(--main-color) !important;
 }
 
+/* button and srollbar */
+
+.fixedbtn {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 1%;
+  z-index: 10;
+}
+.theme-switch {
+  display: inline-block;
+  height: 2.1rem;
+  position: relative;
+  width: 3rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(0.8rem);
+}
+
+.slider.round {
+  border-radius: 5rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Scrollbar */
 html::-webkit-scrollbar {
   width: 14px;
 }
@@ -141,6 +203,8 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-track-piece {
   display: none;
 }
+
+/* header setup */
 
 .bg-image {
   background-image: url(../photos/background.jpg);
@@ -200,6 +264,7 @@ h6 {
   transition: all 1s ease;
 }
 
+/* Topbar */
 .topbar {
   top: 5%;
   display: flex;
@@ -231,6 +296,7 @@ h6 {
   padding: 8px;
 }
 
+/* Navbar */
 #navbar {
   background-color: var(--nav-bar);
   position: fixed;
