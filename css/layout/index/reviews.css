@@ -1,0 +1,9 @@
+/* Reviews */
+#Reviews {
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+.reviews h1 {
+  font-size: 8vw;
+  text-align: center;
+}
