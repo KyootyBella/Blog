@@ -8,7 +8,7 @@ footer {
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 30px 20vw;
+  padding: 30px 15vw;
 }
 .footer .footer-left,
 .footer .footer-center,
@@ -17,7 +17,7 @@ footer {
   vertical-align: top;
 }
 .footer .footer-left {
-  width: 40%;
+  width: 35%;
 }
 .footer h3 {
   font-size: 36px;
@@ -25,6 +25,10 @@ footer {
   font-weight: 500;
   filter: drop-shadow(0px 3px 2px var(--drop-shadow));
   color: var(--footer-white);
+}
+.footer .footer-left img {
+  width: 70px;
+  height: auto;
 }
 .footer .footer-links {
   color: var(--footer-white);
@@ -45,7 +49,8 @@ footer {
   margin: 0;
 }
 .footer .footer-center {
-  width: 35%;
+  width: 40%;
+  align-self: center;
 }
 .footer .footer-spacer {
   margin-top: 5px;
@@ -89,3 +94,5 @@ footer {
 .footer .footer-icons i {
   color: var(--white);
 }
+
+/* TryHackMe badge */

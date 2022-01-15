@@ -66,13 +66,17 @@
 
   .ourProducts {
     width: 80vw;
-    height: 1000px;
+    height: 110vh;
   }
 
   .ourProducts p {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+  }
+  .ourProductscontent h4 {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
   }
 
   .footer {
@@ -116,6 +120,14 @@
   #navbar a.icon {
     font-size: 13px;
   }
+  .ourProducts {
+    width: 80vw;
+    height: 120vh;
+  }
+  .ourProductscontent h4 {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -130,6 +142,10 @@
   }
   #logo {
     margin-left: 5px;
+  }
+  .ourProducts {
+    width: 80vw;
+    height: 130vh;
   }
 }
 
