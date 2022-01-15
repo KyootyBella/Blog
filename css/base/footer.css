@@ -8,7 +8,7 @@ footer {
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 55px 50px;
+  padding: 30px 20vw;
 }
 .footer .footer-left,
 .footer .footer-center,
@@ -49,40 +49,6 @@ footer {
 }
 .footer .footer-spacer {
   margin-top: 5px;
-}
-.footer .footer-center i {
-  background-color: var(--footer-icons);
-  color: var(--white);
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-.footer .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-.footer .footer-center p {
-  display: inline-block;
-  color: var(--white);
-  vertical-align: middle;
-  font-weight: normal;
-  margin: 0;
-}
-.footer .footer-center p span {
-  display: block;
-  color: var(--white);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-.footer .footer-center p a {
-  color: var(--footer-link);
-  text-decoration: none;
 }
 .footer .footer-right {
   width: 20%;

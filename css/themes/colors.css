@@ -1,48 +1,50 @@
 :root {
-  --main-bg: #fafafa;
+  --main-bg: #ebebec;
   --main-color: #e89d95;
   --body: #00000000;
   --main-hover: #fdb7c1;
-  --nav-bar: #e7e7e7;
+  --nav-bar: #dadade;
 
-  --contactform: #c4c4c480;
+  --contactform: #ccccce80;
   --contactform-text: #fafafa;
-  --button-color: #ffe2dc;
+  --button-color: #fbc9bf;
+  --button-color-products: #fbc9bf;
   --text: #252525;
 
   --nav-bar-h1: #393939;
   --h1: #393939;
-  --h4: #efc5bd;
+  --h4: #e0b3aa;
   --h6: #b4b4b4;
 
   --drop-shadow: #fdb7c180;
   --drop-shadow-h6: #531212b3;
 
-  --white: #ffffff;
+  --white: #f5f5f5;
   --gray: #c4c4c480;
 
-  --box: #c4c4c480;
+  --box: #ccccce80;
   --dot: #bbb;
   --dot-active: #717171;
 
   --footer: #292c2f;
   --footer-white: #f5f5f5;
   --footer-icons: #b194a8;
-  --footer-name: #8f9296;
+  --footer-name: #a5a9af;
   --footer-link: #5383d3;
   --footer-about: #92999f;
 }
 
 [data-theme="dark"] {
-  --main-bg: #1b1b1b;
+  --main-bg: #1b1b1f;
   --main-color: #f3a39b;
   --body: #00000000;
   --main-hover: #d399a2;
   --nav-bar: #363636;
 
-  --contactform: #74747480;
+  --contactform: #74747b80;
   --contactform-text: #74747490;
-  --button-color: #ecbbb1;
+  --button-color: #dbaea4;
+  --button-color-products: #cc978bd7;
   --text: #dddddd;
 
   --drop-shadow: #fdb7c180;
@@ -56,17 +58,17 @@
   --white: #b1b1b1;
   --gray: #c4c4c480;
 
-  --box: #74747480;
+  --box: #74747b80;
   --dot: #bbb;
   --dot-active: #717171;
 
   --theme-btn: #74747480;
   --theme-btn-bg: #fafafa;
 
-  --footer: #292c2f;
+  --footer: #20232a;
   --footer-white: #dddddd;
   --footer-icons: #b194a8;
-  --footer-name: #8f9296;
+  --footer-name: #afb4b9;
   --footer-link: #5383d3;
   --footer-about: #92999f;
 }
