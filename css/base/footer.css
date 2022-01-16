@@ -21,14 +21,16 @@ footer {
 }
 .footer h3 {
   font-size: 36px;
-  margin: 0;
+  margin-top: 1rem;
+  padding-left: 5rem;
   font-weight: 500;
   filter: drop-shadow(0px 3px 2px var(--drop-shadow));
   color: var(--footer-white);
 }
 .footer .footer-left img {
   width: 70px;
-  height: auto;
+  height: 75px;
+  float: left;
 }
 .footer .footer-links {
   color: var(--footer-white);

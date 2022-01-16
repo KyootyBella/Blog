@@ -32,13 +32,15 @@
 .whoarewe h4 {
   font-size: 30px;
   font-weight: 400;
+  text-align: center;
 }
 .whoarewe {
   margin-bottom: 2rem;
 }
 .whoweare {
-  max-width: 95%;
+  max-width: 98%;
   font-size: 16px;
+  line-height: 2rem;
 }
 /* Slideshow */
 .slideshow {

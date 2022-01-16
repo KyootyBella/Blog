@@ -25,6 +25,18 @@
     grid-template-columns: 1fr;
     gap: 1em;
   }
+  .footer {
+    padding: 30px 5vw;
+  }
+  .footer .footer-left img {
+    width: 70px;
+    height: 75px;
+    float: none;
+  }
+  .footer h3 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,12 +78,11 @@
 
   .ourProducts {
     width: 80vw;
-    height: 110vh;
   }
 
   .ourProducts p {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-bottom: 3rem;
   }
   .ourProductscontent h4 {
@@ -122,7 +133,6 @@
   }
   .ourProducts {
     width: 80vw;
-    height: 120vh;
   }
   .ourProductscontent h4 {
     margin-bottom: 3rem;
@@ -145,7 +155,6 @@
   }
   .ourProducts {
     width: 80vw;
-    height: 130vh;
   }
 }
 
@@ -155,5 +164,9 @@
   }
   #navbar ul {
     gap: 5px !important;
+  }
+  .ourProducts p {
+    font-size: 18px;
+    line-height: 1.5rem;
   }
 }
