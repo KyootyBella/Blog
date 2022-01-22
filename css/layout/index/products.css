@@ -5,11 +5,17 @@
   width: 100%;
   color: var(--white);
   justify-content: center;
+  background-color: var(--main-bg);
 }
+#Products .spacer {
+  background-color: var(--main-bg);
+}
+
 .products {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3%;
+  padding-bottom: 3%;
+  background-color: var(--main-bg);
 }
 .ourProducts {
   width: 450px;
