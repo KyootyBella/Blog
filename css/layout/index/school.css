@@ -1,0 +1,44 @@
+/* Reviews */
+#School {
+  background-color: var(--secondary-bg);
+  height: 100vh;
+}
+#School .spacer {
+  background-color: var(--secondary-bg);
+}
+.school h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--h1);
+}
+
+.middle {
+  border-left: 3px solid var(--text);
+  height: 70vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 10;
+}
+
+.alternate-list {
+  list-style: none;
+  max-width: 80vw;
+  padding: 0;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.alternate-list li {
+  position: relative;
+  font-size: 25px;
+  margin-bottom: 5vh;
+  padding-top: 10vh;
+}
+.alternate-list li:nth-child(even) {
+  text-align: right;
+  padding-left: 0;
+}

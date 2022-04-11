@@ -1,5 +1,6 @@
 :root {
   --main-bg: #ebebec;
+  --secondary-bg: #c2c2c2;
   --main-color: #e89d95;
   --body: #00000000;
   --main-hover: #fdb7c1;
@@ -37,6 +38,7 @@
 
 [data-theme="dark"] {
   --main-bg: #1b1b1f;
+  --secondary-bg: #2e2e35;
   --main-color: #f3a39b;
   --body: #00000000;
   --main-hover: #d399a2;
