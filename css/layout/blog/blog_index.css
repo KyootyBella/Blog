@@ -1,0 +1,28 @@
+.main {
+  height: 150vh;
+  background-color: transparent;
+}
+
+#navbar {
+  top: 0 !important;
+}
+
+.bg-image {
+  background-image: url(../../../photos/backgroundv2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: auto;
+}
+
+.foreground {
+  filter: none;
+  background-color: var(--secondary-bg);
+  width: 80%;
+  height: 90%;
+  position: relative;
+  margin: 0 auto;
+  top: 10vh;
+}
