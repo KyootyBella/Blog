@@ -1,23 +1,23 @@
 /* Products */
 
-#Products {
+#Projects {
   height: auto;
   width: 100%;
   color: var(--white);
   justify-content: center;
   background-color: var(--main-bg);
 }
-#Products .spacer {
+#Projects .spacer {
   background-color: var(--main-bg);
 }
 
-.products {
+.projects {
   display: flex;
   justify-content: space-between;
   padding-bottom: 3%;
   background-color: var(--main-bg);
 }
-.ourProducts {
+.ourProjects {
   width: 450px;
   height: 850px;
   margin-top: 1.5rem;
@@ -27,7 +27,7 @@
   position: relative;
   background-color: var(--text);
 }
-.ourProducts::before {
+.ourProjects::before {
   content: "";
   top: 0;
   left: 0;
@@ -39,26 +39,26 @@
   background-size: cover;
   filter: brightness(50%);
 }
-.ourProductscontent {
+.ourProjectscontent {
   position: absolute;
 }
-.ourProductscontent h4 {
+.ourProjectscontent h4 {
   color: var(--h4);
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 4rem;
   margin-top: 7rem;
 }
-.ourProducts p {
+.ourProjects p {
   text-align: left;
-  color: var(--products-white);
+  color: var(--projects-white);
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 3rem;
   line-height: 2rem;
 }
-.ourProducts .button {
-  background-color: var(--button-color-products);
+.ourProjects .button {
+  background-color: var(--button-color-projects);
   border: none;
   border-radius: 100px;
   padding: 6%;
@@ -67,7 +67,7 @@
   display: inline-block;
   font-size: 24px;
 }
-.ourProducts .button:hover {
+.ourProjects .button:hover {
   background-color: var(--main-hover);
   transition: all 0.5s ease;
 }
@@ -79,7 +79,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
 }
-.show .product {
+.show .project {
   width: 100%;
   height: 100%;
   background-color: var(--dot-active);

@@ -1,12 +1,12 @@
 /* Abous Us */
-#AboutUs {
+#AboutMe {
   height: auto;
   width: 100%;
   background-color: var(--main-bg);
   justify-content: center;
   z-index: 1;
 }
-#AboutUs h2 {
+#AboutMe h2 {
   font-size: 3.5rem;
   font-weight: 500;
   margin-top: 5rem;
