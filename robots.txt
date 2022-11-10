@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /photos/
 Disallow: /
-Sitemap: http://www.mydomain.com/sitemap.xml

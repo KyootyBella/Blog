@@ -30,10 +30,18 @@ section {
 
 .fixedbtn {
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-  padding: 1%;
+  bottom: 1.5vh;
+  left: 1.5vw;
+  padding: 0.5%;
   z-index: 10;
+  align-items: center;
+}
+.fixedbtn p {
+  color: var(--footer-white);
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
 .theme-switch {
   display: inline-block;

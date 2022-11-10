@@ -39,13 +39,13 @@
 
 #navbar img {
   height: 65px;
-  width: 4rem;
+  width: auto;
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
   color: var(--nav-bar-h1);
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   margin-left: 2.7vw;
   filter: brightness(85%) saturate(150%);
   filter: drop-shadow(0px 3px 2px var(--drop-shadow));
