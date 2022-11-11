@@ -2,7 +2,7 @@
   height: 40vh;
 }
 .bg-image {
-  background-image: url(../../../photos/backgroundv2.jpg);
+  background-image: url(../../../assets/images/backgroundv2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
