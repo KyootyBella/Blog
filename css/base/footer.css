@@ -30,18 +30,6 @@
   height: 75px;
   float: left;
 }
-.footer .footer-links {
-  color: var(--footer-white);
-  margin: 20px 0 12px;
-  padding: 0;
-}
-.footer .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-  font-weight: normal;
-}
 .footer .footer-name {
   color: var(--footer-name);
   font-size: 14px;
@@ -94,5 +82,29 @@
 .footer .footer-icons i {
   color: var(--white);
 }
-
 /* TryHackMe badge */
+
+
+
+/* Updated by dolphin: */
+/*footer link list*/
+.footer-link-list {
+  margin: 0 0 12px;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+}
+.footer-link-list > li {
+  display: inline-block;
+}
+.footer-link {
+  color: var(--footer-white);
+  line-height: 1.8;
+  text-decoration: none;
+  font-weight: normal;
+}
+.footer-link-list > li:not(:last-child) .footer-link::after {
+  content: ' ·';
+}
+
+

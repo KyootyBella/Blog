@@ -23,39 +23,18 @@
   </head>
 
   <body>
-    <a class="fixedbtn">
-      <div class="center">
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>
-      </div>
+<!--    <a class="fixedbtn">-->
+<!--      <div class="center">-->
+<!--        <label class="theme-switch" for="checkbox">-->
+<!--          <input type="checkbox" id="checkbox" />-->
+<!--          <div class="slider round"></div>-->
+<!--        </label>-->
+<!--      </div>-->
 
-      <p>Dark mode</p>
-    </a>
+<!--      <p>Dark mode</p>-->
+<!--    </a>-->
 
-    <nav>
-      <div id="navbar" class="navbar" style="height: 63px">
-        <a href="#home" id="logo" class="anchor"
-          ><img src="../assets/logos/logo.png" alt="KyootyBella"
-        /></a>
-        <ul id="navbar-ul">
-          <li class="home"><a href="#home" class="home anchor">Home</a></li>
-          <li class="AboutMe">
-            <a href="#AboutMe" class="AboutMe anchor">About me</a>
-          </li>
-          <li class="Projects">
-            <a href="#Projects" class="Projects anchor">Blog posts</a>
-          </li>
-          <li class="School">
-            <a href="#School" class="School anchor">Education</a>
-          </li>
-          <li class="Work">
-            <a href="#Work" class="Work anchor">Experience</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!--main-->
     <div class="container bg-image">
       <section id="home">
         <div class="header">
@@ -85,9 +64,9 @@
             <article class="entry">
               <header class="entry-header">
                 <h1 class="entry-title">
-                  <a title="" href="single.html"
-                    >Hey, This Is a Raleway Typeface!</a
-                  >
+                  <a title="" href="single.html">
+                    Hey, This Is a Raleway Typeface!
+                  </a>
                 </h1>
 
                 <div class="entry-meta">
@@ -259,24 +238,53 @@
       <!-- /content -->
     </div>
 
-    <!-- Footer
-   ================================================== -->
+    <!-- nav -->
+    <nav>
+      <div id="navbar" class="navbar" style="height: 63px">
+        <a href="#home" id="logo" class="anchor"
+        ><img src="../assets/logos/logo.png" alt="KyootyBella"
+        /></a>
+        <ul id="navbar-ul">
+          <li class="home"><a href="#home" class="home anchor">Home</a></li>
+          <li class="AboutMe">
+            <a href="#AboutMe" class="AboutMe anchor">About me</a>
+          </li>
+          <li class="Projects">
+            <a href="#Projects" class="Projects anchor">Blog posts</a>
+          </li>
+          <li class="School">
+            <a href="#School" class="School anchor">Education</a>
+          </li>
+          <li class="Work">
+            <a href="#Work" class="Work anchor">Experience</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- footer -->
     <footer class="footer">
       <div class="footer-left">
         <img src="../assets/logos/logo.png" alt="My Logo" />
         <h3>KyootyBella</h3>
 
-        <p class="footer-links">
-          <a href="#home">Home</a>
-          ·
-          <a href="#AboutMe">About me</a>
-          ·
-          <a href="#Projects">Projects</a>
-          ·
-          <a href="#Reviews">Education</a>
-          ·
-          <a href="#School">Experience</a>
-        </p>
+        <ul class="footer-link-list">
+          <li>
+            <a class="footer-link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#AboutMe">About me</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#Reviews">Education</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#School">Experience</a>
+          </li>
+        </ul>
 
         <p class="footer-name">
           Copyright © 2022 All rights are served to KyootyBella
@@ -307,10 +315,8 @@
         </div>
       </div>
     </footer>
-    <!-- /footer -->
-    <!-- Java Script
-   ================================================== -->
 
+    <!-- scripts -->
     <script src="../scripts/index.js"></script>
     <script src="../scripts/scroll.js"></script>
     <script src="../scripts/active.js"></script>
