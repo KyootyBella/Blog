@@ -1,5 +1,5 @@
 const toggleSwitch = document.querySelector(
-  '.theme-switch input[type="checkbox"]'
+  '.switch-toggle-label input[type="checkbox"]'
 );
 
 function switchTheme(e) {

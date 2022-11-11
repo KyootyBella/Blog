@@ -1,0 +1,6 @@
+.article {
+    display: inline-block;
+    background-color: var(--main-bg);
+    border-radius: 5% 5% 0 0;
+    padding: 66px 0 100px;
+}
