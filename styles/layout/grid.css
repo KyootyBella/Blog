@@ -1,0 +1,19 @@
+.grid {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+@media only screen and ( min-width: 1440px ) {
+    .grid {
+        width: 60vw;
+        max-width: 60vw;
+    }
+}

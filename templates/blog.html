@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <title>KyootyBellas blog</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="icon" href="../assets/logos/favicon.ico" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logos/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicon-16x16.png"/>
+    <link rel="mask-icon" href="../assets/logos/safari-pinned-tab.svg" color="#5bbad5"/>
+<!--    <link rel="manifest" href="../assets/logos/site.webmanifest" />  @TODO -->
+
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+<!--    <a class="fixedbtn">-->
+<!--      <div class="center">-->
+<!--        <label class="theme-switch" for="checkbox">-->
+<!--          <input type="checkbox" id="checkbox" />-->
+<!--          <div class="slider round"></div>-->
+<!--        </label>-->
+<!--      </div>-->
+
+<!--      <p>Dark mode</p>-->
+<!--    </a>-->
+
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <nav>
+        <div id="navbar" class="navbar" style="height: 63px">
+          <a href="#home" id="logo" class="anchor"
+          ><img src="../assets/logos/logo.png" alt="KyootyBella"
+          /></a>
+          <ul id="navbar-ul">
+            <li class="home"><a href="#home" class="home anchor">Home</a></li>
+            <li class="AboutMe">
+              <a href="#AboutMe" class="AboutMe anchor">About me</a>
+            </li>
+            <li class="Projects">
+              <a href="#Projects" class="Projects anchor">Blog posts</a>
+            </li>
+            <li class="School">
+              <a href="#School" class="School anchor">Education</a>
+            </li>
+            <li class="Work">
+              <a href="#Work" class="Work anchor">Experience</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main class="grid">
+<!--      <header id="header">-->
+<!--        <div class="column">-->
+<!--          <div class="content">-->
+<!--            <ul>-->
+<!--              <li><a href="#about-me" class="anchor">About me</a></li>-->
+<!--              <li><a href="#projects" class="anchor">Projects</a></li>-->
+<!--              <li><a href="#reviews" class="anchor">Experience</a></li>-->
+<!--              <li><a href="#school" class="anchor">Education</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div class="column">-->
+<!--            <div class="content">-->
+<!--              <h1>KyootyBella</h1>-->
+<!--              <h6>A Cybersecurity themed blog</h6>-->
+<!--           </div>-->
+<!--         </div>-->
+<!--        </div>-->
+<!--      </header>-->
+
+<!--      &lt;!&ndash; Content-->
+<!--   ================================================== &ndash;&gt;-->
+<!--      <section id="content">-->
+<!--        <div class="row">-->
+<!--          <div id="main" class="tab-whole eight columns entries">-->
+<!--            <article class="entry">-->
+<!--              <header class="entry-header">-->
+<!--                <h1 class="entry-title">-->
+<!--                  <a title="" href="single.html">-->
+<!--                    Hey, This Is a Raleway Typeface!-->
+<!--                  </a>-->
+<!--                </h1>-->
+
+<!--                <div class="entry-meta">-->
+<!--                  <ul>-->
+<!--                    <li>July 12, 2014</li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>John Doe</li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </header>-->
+
+<!--              <div class="entry-content">-->
+<!--                <p>-->
+<!--                  Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat-->
+<!--                  nostrud cupidatat dolor sunt sint sit nisi est eu exercitation-->
+<!--                  incididunt adipisicing veniam velit id fugiat enim mollit amet-->
+<!--                  anim veniam dolor dolor irure velit commodo cillum sit nulla-->
+<!--                  ullamco magna amet magna cupidatat qui labore cillum sit in-->
+<!--                  tempor veniam consequat non laborum adipisicing aliqua ea nisi-->
+<!--                  sint ut quis proident ullamco ut dolore culpa occaecat ut-->
+<!--                  laboris in sit minim cupidatat ut dolor voluptate enim veniam-->
+<!--                  consequat occaecat fugiat in adipisicing in amet Ut nulla nisi-->
+<!--                  non ut enim aliqua laborum mollit quis nostrud sed sed.-->
+<!--                </p>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--            &lt;!&ndash; /entry &ndash;&gt;-->
+
+<!--            <article class="entry">-->
+<!--              <header class="entry-header">-->
+<!--                <h1 class="entry-title">-->
+<!--                  <a title="" href="single.html"-->
+<!--                    >We All Love Good Typography.</a-->
+<!--                  >-->
+<!--                </h1>-->
+
+<!--                <div class="entry-meta">-->
+<!--                  <ul>-->
+<!--                    <li>July 11, 2014</li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>-->
+<!--                      <a rel="category tag" title="" href="#">Wordpress</a>,-->
+<!--                      <a rel="category tag" title="" href="#">Ghost</a>-->
+<!--                    </li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>Jane Doe</li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </header>-->
+
+<!--              <div class="entry-content">-->
+<!--                <p>-->
+<!--                  Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat-->
+<!--                  nostrud cupidatat dolor sunt sint sit nisi est eu exercitation-->
+<!--                  incididunt adipisicing veniam velit id fugiat enim mollit amet-->
+<!--                  anim veniam dolor dolor irure velit commodo cillum sit nulla-->
+<!--                  ullamco magna amet magna cupidatat qui labore cillum sit in-->
+<!--                  tempor veniam consequat non laborum adipisicing aliqua ea nisi-->
+<!--                  sint ut quis proident ullamco ut dolore culpa occaecat ut-->
+<!--                  laboris in sit minim cupidatat ut dolor voluptate enim veniam-->
+<!--                  consequat occaecat fugiat in.-->
+<!--                </p>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--            &lt;!&ndash; /entry &ndash;&gt;-->
+
+<!--            <article class="entry">-->
+<!--              <header class="entry-header">-->
+<!--                <h1 class="entry-title">-->
+<!--                  <a title="" href="single.html">White Space Everywhere.</a>-->
+<!--                </h1>-->
+
+<!--                <div class="entry-meta">-->
+<!--                  <ul>-->
+<!--                    <li>July 10, 2014</li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>-->
+<!--                      <a rel="category tag" title="" href="#">Joomla</a>,-->
+<!--                      <a rel="category tag" title="" href="#">Drupal</a>-->
+<!--                    </li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>Naruto Uzumaki</li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </header>-->
+
+<!--              <div class="entry-content">-->
+<!--                <p>-->
+<!--                  Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat-->
+<!--                  nostrud cupidatat dolor sunt sint sit nisi est eu exercitation-->
+<!--                  incididunt adipisicing veniam velit id fugiat enim mollit amet-->
+<!--                  anim veniam dolor dolor irure velit commodo cillum sit nulla-->
+<!--                  ullamco magna amet magna cupidatat qui labore cillum sit in-->
+<!--                  tempor veniam consequat non laborum adipisicing aliqua ea nisi-->
+<!--                  sint ut quis proident ullamco ut dolore culpa occaecat ut-->
+<!--                  laboris in sit minim cupidatat ut dolor voluptate enim veniam-->
+<!--                  consequat occaecat fugiat in adipisicing in amet Ut nulla nisi-->
+<!--                  non ut enim aliqua laborum mollit quis nostrud sed sed.-->
+<!--                </p>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--            &lt;!&ndash; /entry &ndash;&gt;-->
+
+<!--            <article class="entry">-->
+<!--              <header class="entry-header">-->
+<!--                <h1 class="entry-title">-->
+<!--                  <a title="" href="single.html"-->
+<!--                    >Simple And Minimalist Designs.</a-->
+<!--                  >-->
+<!--                </h1>-->
+
+<!--                <div class="entry-meta">-->
+<!--                  <ul>-->
+<!--                    <li>July 09, 2014</li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>-->
+<!--                      <a rel="category tag" title="" href="#">Ghost</a>-->
+<!--                    </li>-->
+<!--                    <span class="meta-sep">•</span>-->
+<!--                    <li>Naruto Uzumaki</li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </header>-->
+
+<!--              <div class="entry-content">-->
+<!--                <p>-->
+<!--                  Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat-->
+<!--                  nostrud cupidatat dolor sunt sint sit nisi est eu exercitation-->
+<!--                  incididunt adipisicing veniam velit id fugiat enim mollit amet-->
+<!--                  anim veniam dolor dolor irure velit commodo cillum sit nulla-->
+<!--                  ullamco magna amet magna cupidatat qui labore cillum sit in-->
+<!--                  tempor veniam consequat non laborum adipisicing aliqua ea nisi-->
+<!--                  sint ut quis proident ullamco ut dolore culpa occaecat ut-->
+<!--                  laboris in sit minim cupidatat ut dolor voluptate enim veniam-->
+<!--                  consequat occaecat fugiat in adipisicing in amet Ut nulla nisi-->
+<!--                  non ut enim aliqua laborum mollit quis nostrud sed sed.-->
+<!--                </p>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--            &lt;!&ndash; /entry &ndash;&gt;-->
+
+<!--            <div class="pagenav group">-->
+<!--              <span class="prev"><a href="#" rel="prev">Previous</a></span>-->
+<!--              <span class="next"><a href="#" rel="next">Next</a></span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; /main &ndash;&gt;-->
+
+<!--          <div class="tab-whole four columns end" id="secondary">-->
+<!--            <aside id="sidebar">-->
+<!--              <div class="widget widget_text">-->
+<!--                <h5 class="widget-title">Text Widget</h5>-->
+<!--                <div class="textwidget">-->
+<!--                  Proin gravida nibh vel velit auctor aliquet. Aenean-->
+<!--                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat-->
+<!--                  ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet-->
+<!--                  nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum-->
+<!--                  velit.-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; /widget_text &ndash;&gt;-->
+<!--            </aside>-->
+<!--            &lt;!&ndash; /sidebar &ndash;&gt;-->
+<!--          </div>-->
+<!--          &lt;!&ndash; /secondary &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; /row &ndash;&gt;-->
+<!--      </section>-->
+      <!-- /content -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="grid">
+        <div class="column">
+          <div class="column three">
+            <div class="content">
+              <div class="footer-branding">
+                <img src="../assets/logos/logo.png" alt="My Logo" />
+                <h3>KyootyBella</h3>
+              </div>
+
+              <ul class="footer-link-list">
+                <li>
+                  <a class="footer-link" href="#home">Home</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#about-me">About me</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#projects">Projects</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#reviews">Education</a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#school">Experience</a>
+                </li>
+              </ul>
+
+              <div class="footer-disclaimer">
+                <p>
+                  Copyright © 2022 All rights are served to KyootyBella
+                </p>
+                <p>
+                  There are no cookies on the site as I ain't tracking anything.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column three">
+            <div class="content">
+              <div class="footer-items">
+                <script src="https://tryhackme.com/badge/470365"></script>
+              </div>
+            </div>
+          </div>
+          <div class="column three">
+            <div class="content">
+              <h5>About this site</h5>
+              <!--@TODO: styles will be updated once global heading styles are sorted-->
+              <p>
+                This website is a blog about my story and how I got into
+                cybersecurity, there will be stories about my education, what I do,
+                write-ups of challenges, and walkthroughs on TryHackMe rooms.
+              </p>
+
+              <ul class="footer-icon-link-list">
+                <li>
+                  <a class="footer-icon-link"
+                     href="https://github.com/KyootyBella">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script src="../scripts/active.js"></script>
+    <script src="../scripts/themes.js"></script>
+  </body>
+</html>

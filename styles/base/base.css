@@ -10,16 +10,13 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.container {
-  background-color: var(--main-bg);
-}
 a {
   transition: all 0.5s ease;
 }
 section {
   padding-top: 10px;
 }
-#home {
+#header {
   padding-top: 0%;
 }
 .active {
@@ -37,7 +34,7 @@ section {
   align-items: center;
 }
 .fixedbtn p {
-  color: var(--footer-white);
+  color: var(--footer-text-secondary);
 }
 .center {
   display: flex;
@@ -110,20 +107,20 @@ html::-webkit-scrollbar-corner {
   background-color: transparent;
 }
 html {
-  overflow: overlay;
+  /*overflow: overlay;*/
   color: var(--body);
   transition: color 0.3s;
 }
 html:hover {
   color: var(--main-hover);
-  color: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, #fab3bb),
-    color-stop(0.72, #f2a9aa),
-    color-stop(0.86, #eba19c)
-  );
+  /*color: -webkit-gradient(*/
+  /*  linear,*/
+  /*  left bottom,*/
+  /*  left top,*/
+  /*  color-stop(0.44, #fab3bb),*/
+  /*  color-stop(0.72, #f2a9aa),*/
+  /*  color-stop(0.86, #eba19c)*/
+  /*);*/
 }
 html::-webkit-scrollbar-track {
   display: none;
@@ -136,4 +133,22 @@ html::-webkit-scrollbar-track-piece {
 
 .break {
   filter: brightness(0.65) contrast(1.5);
+}
+
+
+
+/*updated by dolphin*/
+body {
+  background-image: url("../../assets/images/backgroundv2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+
+.content {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
 }

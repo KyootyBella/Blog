@@ -28,12 +28,10 @@
   --dot: #bbb;
   --dot-active: #717171;
 
-  --footer: #292c2f;
-  --footer-white: #f5f5f5;
-  --footer-icons: #b194a8;
-  --footer-name: #a5a9af;
-  --footer-link: #5383d3;
-  --footer-about: #92999f;
+  --footer-text-primary: #a5a9af;
+  --footer-text-secondary: #f5f5f5;
+  --footer-bg: #292c2f;
+  --footer-icon: #b194a8;
 }
 
 [data-theme="dark"] {
@@ -69,10 +67,8 @@
   --theme-btn: #74747480;
   --theme-btn-bg: #fafafa;
 
-  --footer: #20232a;
-  --footer-white: #dddddd;
-  --footer-icons: #b194a8;
-  --footer-name: #afb4b9;
-  --footer-link: #5383d3;
-  --footer-about: #92999f;
+  --footer-bg: #20232a;
+  --footer-text-primary: #afb4b9;
+  --footer-text-secondary: #dddddd;
+  --footer-icon: #b194a8;
 }
