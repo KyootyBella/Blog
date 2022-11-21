@@ -21,12 +21,12 @@ main {
 
 .content {
   display: inline-block;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1440px){
-  .content {
-    padding: 20px;
-  }
-}
+/*@media only screen and (min-width: 1440px){*/
+/*  .content {*/
+/*    padding: 20px;*/
+/*  }*/
+/*}*/

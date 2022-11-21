@@ -49,7 +49,12 @@ input:checked + .slider:before {
 }
 
 /*theme-toggle*/
+/*for now we hide it on small screens until there is a mobile friendly solution. The toggle is too*/
+/*large for a mobile screen. You can consider to check the users standard preference and simply set*/
+/*the theme to that, or even just check their local time and switch between and light and dark based*/
+/*on the time of day ( like: dark theme is automatically set between 7PM and 7AM or whatever )*/
 .theme-toggle {
+    display: none;
     text-align: center;
     position: fixed;
     z-index: 10;
@@ -60,4 +65,10 @@ input:checked + .slider:before {
 .theme-toggle p {
     line-height: 0;
     color: var(--footer-text-secondary);
+}
+
+@media only screen and (min-width: 1440px) {
+    .theme-toggle {
+        display: inline-block;
+    }
 }
