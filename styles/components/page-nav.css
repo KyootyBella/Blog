@@ -1,0 +1,29 @@
+/*page nav*/
+.page-nav a[rel="next"]:after,
+.page-nav a[rel="prev"]:before {
+    text-align: center;
+    display: inline-block;
+    background: transparent;
+    color: var(--main-color);
+    border-radius: 3px;
+    border: 3px solid var(--main-color);
+    font-family: "FontAwesome";
+    padding: 15px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.page-nav a[rel="next"]:after {
+    content: "\f054";
+}
+.page-nav a[rel="prev"]:before {
+    content: "\f053";
+    margin-right: 6px;
+}
+.page-nav a[rel="next"]:hover:after,
+.page-nav a[rel="prev"]:hover:before {
+    color: white;
+    background: var(--main-hover);
+}
