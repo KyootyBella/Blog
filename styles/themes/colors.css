@@ -18,8 +18,8 @@
   --h4: #e0b3aa;
   --h6: #b4b4b4;
 
-  --drop-shadow: #fdb7c180;
-  --drop-shadow-h6: #531212b3;
+  --primary-drop-shadow: #fdb7c180;
+  --secondary-drop-shadow: #531212b3;
 
   --white: #f5f5f5;
   --gray: #c4c4c480;
@@ -49,8 +49,8 @@
   --projects-white: #e2e2e2;
   --text: #dddddd;
 
-  --drop-shadow: #fdb7c180;
-  --drop-shadow-h6: #531212b3;
+  --primary-drop-shadow: #fdb7c180;
+  --secondary-drop-shadow: #531212b3;
 
   --nav-bar-h1: #d4d4d4;
   --h1: #d4d4d4;

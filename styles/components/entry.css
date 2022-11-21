@@ -1,0 +1,23 @@
+.entry h3 {
+    margin-bottom: 1rem;
+}
+
+.entry-meta-list {
+    margin: 0;
+}
+
+.entry-meta-list > li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.entry-meta-list > li:not(:last-child)::after {
+    content: ' •';
+    font-weight: bold;
+}
+
+.meta-tag {
+    color: var(--gray);
+}

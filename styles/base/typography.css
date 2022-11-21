@@ -1,0 +1,59 @@
+/* small note: could also be placed under /themes */
+* {
+    font-family: "Raleway", sans-serif;
+    color: var(--text);
+}
+
+p {
+    line-height: 1.8rem;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 1440px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h4, h5 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--h1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--h6);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+@media only screen and ( min-width: 1440px ){
+    h1 {
+        font-size: 4.6rem;
+    }
+}
+
+a {
+    transition: all 0.5s ease;
+    text-decoration: none;
+}

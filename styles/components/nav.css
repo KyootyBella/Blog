@@ -1,56 +1,69 @@
-/* Navbar */
-#navbar {
-  background-color: var(--nav-bar);
-  position: fixed;
-  top: -125px;
-  left: 0px;
-  width: 100vw;
-  transition: top 1.2s;
-  justify-content: space-between;
-  overflow: hidden;
-  display: flex;
-  z-index: 10;
-}
-#navbar a {
-  display: block;
-  float: right;
-  color: var(--text);
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  cursor: pointer;
-}
-#navbar a:hover {
-  color: var(--main-color);
-}
-#navbar ul {
-  list-style-type: none;
-  margin: 0 3% 0 0;
-  padding: 0;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  vertical-align: top;
-}
-#navbar li {
-  float: right;
-  display: block;
+.nav > a {
+  display: none;
 }
 
-#navbar img {
-  height: 65px;
-  width: auto;
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  color: var(--nav-bar-h1);
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  margin-left: 2.7vw;
-  filter: brightness(85%) saturate(150%);
-  filter: drop-shadow(0px 3px 2px var(--drop-shadow));
+.nav-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: right;
+  padding: 20px;
 }
-#navbar .icon {
-  display: none;
-  font-size: 15px;
+
+.nav-list > li {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.nav-list > li:not(:last-child) {
+  padding-left: 15px;
+}
+
+@media only screen and ( min-width: 768px){
+  .nav {
+    background-color: var(--nav-bar);
+    position: fixed;
+    top: -125px;
+    left: 0;
+    right: 0;
+    height: 65px;
+    transition: top 1.2s;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    z-index: 10;
+  }
+
+
+  /*nav list*/
+  .nav-list {
+    display: flex;
+    position: relative;
+    align-items: center;
+    vertical-align: top;
+  }
+
+
+  /*nav-link*/
+  .nav-link {
+    display: block;
+    float: right;
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .nav-link:hover {
+    color: var(--main-color);
+  }
+
+
+  /*nav branding*/
+  .nav-branding-logo {
+    width: auto;
+    padding: 0.2rem 3em;
+    height: 65px;
+  }
 }

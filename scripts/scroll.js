@@ -1,7 +1,7 @@
 // when the DOM is ready
 $(document).ready(function () {
   // get the anchor link buttons
-  const menuBtn = $(".anchor");
+  const menuBtn = $(".nav-link");
   // when each button is clicked
   menuBtn.click(() => {
     // set a short timeout before taking action

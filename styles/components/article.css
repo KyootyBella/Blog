@@ -1,6 +1,12 @@
 .article {
     display: inline-block;
     background-color: var(--main-bg);
-    border-radius: 5% 5% 0 0;
-    padding: 66px 0 100px;
+    border-radius: 25px 25px 0 0;
+}
+
+@media only screen and ( min-width: 1440px ){
+    .article {
+        padding: 60px;
+        border-radius: 50px 50px 0 0;
+    }
 }
