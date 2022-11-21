@@ -16,7 +16,13 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
+}
+
+@media only screen and ( min-width: 1440px ) {
+  main {
+    height: 100vh;
+  }
 }
 
 .content {
@@ -25,8 +31,3 @@ main {
   box-sizing: border-box;
 }
 
-/*@media only screen and (min-width: 1440px){*/
-/*  .content {*/
-/*    padding: 20px;*/
-/*  }*/
-/*}*/

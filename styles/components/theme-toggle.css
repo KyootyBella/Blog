@@ -59,7 +59,7 @@ input:checked + .slider:before {
     position: fixed;
     z-index: 10;
     bottom: 20px;
-    left: 3rem;
+    left: 20px;
 }
 
 .theme-toggle p {
