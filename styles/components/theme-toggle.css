@@ -1,3 +1,4 @@
+/*generic switch css*/
 .switch-toggle-label {
     display: inline-block;
     height: 2.1rem;
@@ -45,4 +46,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/*theme-toggle*/
+.theme-toggle {
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    left: 3rem;
+}
+
+.theme-toggle p {
+    line-height: 0;
+    color: var(--footer-text-secondary);
 }
