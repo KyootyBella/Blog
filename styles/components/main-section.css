@@ -1,0 +1,10 @@
+.main-section {
+    display: inline-block;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 1440px){
+    .main-section {
+        padding: 5vh 0;
+    }
+}

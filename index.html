@@ -50,7 +50,7 @@
         </ul>
       </nav>
 
-      <section class="section landing-section">
+      <section class="section header-section" id="landing-section">
         <div class="column">
           <div class="column">
             <div class="content">
@@ -58,19 +58,14 @@
             </div>
           </div>
           <div class="column">
-            <div class="arrow">
-              <a href="#AboutMe" class="anchor">
-                <svg width="60"
-                     height="64"
-                     viewBox="0 0 60 64"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
+            <div class="content">
+              <a href="#about-me-section" class="scroll-down">
+                <svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M27.1716 62.8284C28.7337 64.3905 31.2663 64.3905 32.8284 62.8284L58.2843 37.3726C59.8464 35.8105 59.8464 33.2778 58.2843 31.7157C56.7222 30.1536 54.1895 30.1536 52.6274 31.7157L30 54.3431L7.37258 31.7157C5.81049 30.1536 3.27783 30.1536 1.71573 31.7157C0.153632 33.2778 0.153632 35.8105 1.71573 37.3726L27.1716 62.8284ZM26 0L26 60H34V0L26 0Z" fill="#dddddd"/>
                 </svg>
+
+                <p class="font-xl">Read more</p>
               </a>
-            </div>
-            <div class="read-more">
-              <h6>Read more</h6>
             </div>
           </div>
         </div>
@@ -79,8 +74,8 @@
 
     <!--main-->
     <main>
-      <div class="grid">
-        <section class="section" id="about-me-section">
+      <section class="section main-section theme-primary" id="about-me-section">
+        <div class="grid">
           <div class="column">
             <div class="column">
               <div class="content">
@@ -90,24 +85,24 @@
             <div class="column">
               <div class="column two">
                 <div class="content">
-                  <h3>Whoami</h3>
-                </div>
-                <div class="content">
-                  <p>
-                    Lorem quis ut ullamco nulla nulla et fugiat tempor ea ullamco.
-                    Laboris commodo anim eu deserunt ex anim ea sint aute nisi
-                    officia enim anim anim. Proident elit consectetur minim occaecat
-                    excepteur mollit velit deserunt irure dolor amet nostrud ullamco
-                    nulla. Incididunt laborum aliquip fugiat ut eu exercitation
-                    exercitation dolore. Nulla nisi tempor dolore duis sunt qui
-                    reprehenderit ea. Laboris consectetur culpa ullamco esse
-                    excepteur. Sint ad aute voluptate voluptate sit laboris laboris
-                    qui elit sit dolore reprehenderit mollit.
-                  </p>
-                </div>
-                <div class="content">
-                  <div class="slideshow">
-                    <img src="assets/logos/logo.png" alt="my logo" class="mylogo"/>
+                  <div class="theme-tertiary">
+                    <div class="content">
+                      <h3>Whoami</h3>
+                      <p>
+                        Lorem quis ut ullamco nulla nulla et fugiat tempor ea ullamco.
+                        Laboris commodo anim eu deserunt ex anim ea sint aute nisi
+                        officia enim anim anim. Proident elit consectetur minim occaecat
+                        excepteur mollit velit deserunt irure dolor amet nostrud ullamco
+                        nulla. Incididunt laborum aliquip fugiat ut eu exercitation
+                        exercitation dolore. Nulla nisi tempor dolore duis sunt qui
+                        reprehenderit ea. Laboris consectetur culpa ullamco esse
+                        excepteur. Sint ad aute voluptate voluptate sit laboris laboris
+                        qui elit sit dolore reprehenderit mollit.
+                      </p>
+                      <div class="align-center">
+                        <img src="assets/logos/logo.png" alt="kyootybella logo"/>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -116,47 +111,42 @@
                   <h3>Contact</h3>
                 </div>
                 <div class="content">
-                  <div class="contactform js-scroll slide-right">
-                    <h3>NOT WORKING</h3>
+                  <div class="theme-tertiary">
+                    <div class="content">
+                      <h3>NOT WORKING</h3>
 
-                    <form name="contact" method="post" action="php/mail.php">
-                      <div class="form-group">
-                        <label style="padding-top: 20px">Name</label>
-                        <input type="text"
-                               class="input-field"
-                               name="name"
-                               id="userName"/>
-                      </div>
-                      <div class="form-group">
-                        <label>E-mail</label>
-                        <input type="text"
-                               class="input-field"
-                               name="email"
-                               id="email"/>
-                      </div>
-                      <div class="form-group">
-                        <label>Your message</label>
-                        <textarea name="message"
-                                  id="message"
-                                  class="input-field"
-                                  cols="60"
-                                  rows="8"></textarea>
-                      </div>
-                      <div class="form-button">
-                        <input type="submit"
-                              name="send"
-                              class="btn-submit"
-                              value="Send"/>
-                      </div>
-                    </form>
-
+                      <form name="contact" method="post" action="php/mail.php">
+                        <div class="form-group">
+                          <label for="username">Name</label>
+                          <input type="text"
+                                 id="username"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">E-mail</label>
+                          <input type="text"
+                                 id="email"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Your message</label>
+                          <textarea id="message"
+                                    rows="8"></textarea>
+                        </div>
+                        <div class="form-actions">
+                          <input type="submit"
+                                 value="Send"/>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="section" id="projects-section">
+        </div>
+      </section>
+      <section class="section banner clouds"></section>
+      <section class="section main-section theme-primary" id="projects-section">
+        <div class="grid">
           <div class="column">
             <div class="column four c">
               <div class="content">
@@ -194,8 +184,10 @@
 
             </div>
           </div>
-        </section>
-        <section class="section" id="education-section">
+        </div>
+      </section>
+      <section class="section main-section theme-secondary" id="education-section">
+        <div class="grid">
           <div class="column">
             <div class="content">
               <h3>Education</h3>
@@ -211,15 +203,17 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section" id="work-section">
+        </div>
+      </section>
+      <section class="section main-section theme-primary" id="work-section">
+        <div class="grid">
           <div class="column">
             <div class="content">
               <h4>UNDER CONSTRUCTION</h4>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!--theme toggle-->
@@ -233,73 +227,74 @@
   </div>
 
     <!-- footer -->
-    <footer class="footer">
-    <div class="grid">
-      <div class="column">
-        <div class="column three">
-          <div class="content">
-            <div class="footer-branding">
-              <img src="assets/logos/logo.png" alt="My Logo" />
-              <h3>KyootyBella</h3>
-            </div>
+<!--    <footer class="footer">-->
+<!--    &lt;!&ndash;@TODO match grid&ndash;&gt;-->
+<!--      <div class="grid narrow-grid">-->
+<!--      <div class="column">-->
+<!--        <div class="column three">-->
+<!--          <div class="content">-->
+<!--            <div class="footer-branding">-->
+<!--              <img src="assets/logos/logo.png" alt="My Logo" />-->
+<!--              <h3>KyootyBella</h3>-->
+<!--            </div>-->
 
-            <ul class="footer-link-list">
-              <li>
-                <a class="footer-link" href="#home">Home</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#about-me">About me</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#projects">Projects</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#reviews">Education</a>
-              </li>
-              <li>
-                <a class="footer-link" href="#school">Experience</a>
-              </li>
-            </ul>
+<!--            <ul class="footer-link-list">-->
+<!--              <li>-->
+<!--                <a class="footer-link" href="#home">Home</a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a class="footer-link" href="#about-me">About me</a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a class="footer-link" href="#projects">Projects</a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a class="footer-link" href="#reviews">Education</a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a class="footer-link" href="#school">Experience</a>-->
+<!--              </li>-->
+<!--            </ul>-->
 
-            <div class="footer-disclaimer">
-              <p>
-                Copyright © 2022 All rights are served to KyootyBella
-              </p>
-              <p>
-                There are no cookies on the site as I ain't tracking anything.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="column three">
-          <div class="content">
-            <div class="footer-items">
-              <script src="https://tryhackme.com/badge/470365"></script>
-            </div>
-          </div>
-        </div>
-        <div class="column three">
-          <div class="content">
-            <h5>About this site</h5>
-            <p>
-              This website is a blog about my story and how I got into
-              cybersecurity, there will be stories about my education, what I do,
-              write-ups of challenges, and walkthroughs on TryHackMe rooms.
-            </p>
+<!--            <div class="footer-disclaimer">-->
+<!--              <p>-->
+<!--                Copyright © 2022 All rights are served to KyootyBella-->
+<!--              </p>-->
+<!--              <p>-->
+<!--                There are no cookies on the site as I ain't tracking anything.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="column three">-->
+<!--          <div class="content">-->
+<!--            <div class="footer-items">-->
+<!--              <script src="https://tryhackme.com/badge/470365"></script>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="column three">-->
+<!--          <div class="content">-->
+<!--            <h5>About this site</h5>-->
+<!--            <p>-->
+<!--              This website is a blog about my story and how I got into-->
+<!--              cybersecurity, there will be stories about my education, what I do,-->
+<!--              write-ups of challenges, and walkthroughs on TryHackMe rooms.-->
+<!--            </p>-->
 
-            <ul class="footer-icon-link-list">
-              <li>
-                <a class="footer-icon-link"
-                   href="https://github.com/KyootyBella">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+<!--            <ul class="footer-icon-link-list">-->
+<!--              <li>-->
+<!--                <a class="footer-icon-link"-->
+<!--                   href="https://github.com/KyootyBella">-->
+<!--                  <i class="fa fa-github"></i>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    </footer>-->
 
     <!--scripts-->
     <script src="scripts/slideshow.js"></script>

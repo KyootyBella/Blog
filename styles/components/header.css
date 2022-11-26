@@ -1,3 +1,4 @@
+/*blog header section*/
 .header-section {
     display: inline-block;
     width: 100vw;
@@ -18,4 +19,22 @@
 
 .header-section h2 {
     filter: drop-shadow(0px 2px 1px var(--secondary-drop-shadow));
+}
+
+
+/*index header section*/
+.header-section#landing-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
 }

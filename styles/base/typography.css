@@ -9,6 +9,10 @@ p {
     font-size: 14px;
 }
 
+p.font-xl {
+    font-size: 2rem;
+}
+
 @media only screen and (min-width: 1440px) {
     p {
         font-size: 16px;
@@ -61,5 +65,3 @@ a {
     transition: all 0.5s ease;
     text-decoration: none;
 }
-
-
