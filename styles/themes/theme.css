@@ -1,0 +1,14 @@
+.theme-primary {
+    background-color: var(--main-bg);
+}
+
+.theme-secondary {
+    background-color: var(--secondary-bg);
+}
+
+.theme-tertiary {
+    background-color: var(--box);
+    border-color: var(--main-hover);
+    border-style: groove;
+    border-width: 5px;
+}

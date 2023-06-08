@@ -1,0 +1,11 @@
+.banner {
+    height: 250px;
+    width: 100vw;
+    display: block;
+}
+
+.banner.clouds {
+    background-image: url("../../assets/images/break.jpg");
+    background-size: cover;
+    filter: brightness(.65) contrast(1.5);
+}

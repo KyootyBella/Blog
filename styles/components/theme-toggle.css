@@ -1,0 +1,74 @@
+/*generic switch css*/
+.switch-toggle-label {
+    display: inline-block;
+    height: 2.1rem;
+    position: relative;
+    width: 3rem;
+}
+
+.switch-toggle-label input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(0.8rem);
+}
+
+.slider.round {
+    border-radius: 5rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*theme-toggle*/
+/*for now we hide it on small screens until there is a mobile friendly solution. The toggle is too*/
+/*large for a mobile screen. You can consider to check the users standard preference and simply set*/
+/*the theme to that, or even just check their local time and switch between and light and dark based*/
+/*on the time of day ( like: dark theme is automatically set between 7PM and 7AM or whatever )*/
+.theme-toggle {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    left: 20px;
+}
+
+.theme-toggle p {
+    line-height: 0;
+    color: var(--footer-text-secondary);
+}
+
+@media only screen and (min-width: 1440px) {
+    .theme-toggle {
+        display: inline-block;
+    }
+}

@@ -7,9 +7,9 @@ function scrollFunction() {
     document.body.scrollTop > 225 ||
     document.documentElement.scrollTop > 225
   ) {
-    document.getElementById("navbar").style.top = "0";
+    document.querySelector('.nav').style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-125px";
+    document.querySelector('.nav').style.top = "-125px";
   }
 }
 
@@ -40,11 +40,3 @@ $(document).ready(function () {
   });
 });
 
-function myFunction() {
-  var x = document.getElementById("navbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
