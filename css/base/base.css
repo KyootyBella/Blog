@@ -37,7 +37,7 @@ section {
   align-items: center;
 }
 .fixedbtn p {
-  color: var(--footer-white);
+  color: var(--h4);
 }
 .center {
   display: flex;
@@ -112,7 +112,7 @@ html::-webkit-scrollbar-corner {
 html {
   overflow: overlay;
   color: var(--body);
-  transition: color 0.3s;
+  transition: color 1.5s;
 }
 html:hover {
   color: var(--main-hover);
